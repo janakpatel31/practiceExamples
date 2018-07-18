@@ -1,0 +1,17 @@
+package com.demo1.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.demo1.domain.Topic;
+
+public class TopicController {
+
+	
+	public List<Topic> getTopic()
+	{
+		return Arrays.asList(
+				new Topic("spring", "Spring Name", "Spring Description")
+				);
+	}
+}

@@ -1,0 +1,18 @@
+package com.demo1.service;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.springframework.stereotype.Service;
+
+import com.demo1.domain.Topic;
+
+@Service
+public class TopicService {
+
+	
+	private List<Topic> topics = new ArrayList<>(Arrays.asList(
+			new Topic("spring", "Spring Name", "Spring Description"),
+			new Topic("java", "java Name", "java Description")
+			));
+}
